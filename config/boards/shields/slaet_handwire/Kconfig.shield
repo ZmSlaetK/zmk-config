@@ -1,5 +1,0 @@
-config SHIELD_SLAET_HANDWIRE_LEFT
-    def_bool $(shields_list_contains,slaet_handwire_left)
-
-config SHIELD_SlaetHandwire_right
-    def_bool $(shields_list_contains,slaet_handwire_right)
