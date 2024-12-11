@@ -99,9 +99,9 @@
                 default_layer {
 
                         bindings = <
-   &kp SPACE  &kp Q &kp W &kp F &kp P &kp B                         &kp J &kp L     &kp U     &kp Y               &kp SEMI     &trans
-   &kp F14    &kp A &kp R &kp S &kp T &kp G                         &kp M &kp N     &kp E     &lt NAVLAYER I      &kp O        &kp SQT
-   &kp F15    &kp Z &kp X &kp C &kp D &kp V                         &kp K &kp H     &kp COMMA &kp DOT             &kp FSLH     &kp ESC
+   &none  &kp Q &kp W &kp F &kp P &kp B                         &kp J &kp L     &kp U     &kp Y               &kp SEMI     &none
+   &none   &kp A &kp R &kp S &kp T &kp G                         &kp M &kp N     &kp E     &lt NAVLAYER I      &kp O        &none
+   &none    &kp Z &kp X &kp C &kp D &kp V                         &kp K &kp H     &kp COMMA &kp DOT             &kp FSLH     &none
 
                /**/  &kp LCTRL &kp LCTRL &lt NUMLAYER SPACE       /**/ &sk RSHIFT &kp RCTRL &kp RALT
                   
@@ -110,9 +110,9 @@
                 NUMLAYER {
 
                         bindings = <
-   &trans   &kp EXCL &kp BSLH   &kp LBRC &kp RBRC &kp PIPE2                 &kp FSLH    &kp N7  &kp N8     &kp N9   &kp ASTRK          &trans
-   &trans   &kp HASH &kp DLLR   &kp LPAR &kp RPAR &kp DOT                   &kp BSLH    &kp N4  &kp N5     &kp N6   &kp PLUS           &kp MINUS
-   &trans   &kp FSLH &kp CARET  &kp LBKT &kp RBKT &kp TILDE2                &trans      &kp N1  &kp N2     &kp N3   &kp KP_DIVIDE      &kp AMPS
+   &trans   &kp EXCL &kp BSLH   &kp LBRC &kp RBRC &kp PIPE2                 &kp FSLH    &kp N7  &kp N8     &kp N9   &kp ASTRK          &none
+   &trans   &kp HASH &kp DLLR   &kp LPAR &kp RPAR &kp DOT                   &kp BSLH    &kp N4  &kp N5     &kp N6   &kp PLUS           &none
+   &trans   &kp FSLH &kp CARET  &kp LBKT &kp RBKT &kp TILDE2                &trans      &kp N1  &kp N2     &kp N3   &kp KP_DIVIDE      &none
 
                                         &trans &sk LSHIFT &trans           &mt LSHIFT NUMBER_0    &kp RSHIFT  &kp RALT
                   
@@ -121,9 +121,9 @@
                 NAVLAYER {
 
                         bindings = <
-   &trans       &trans  &kp PG_DN   &kp UP      &kp PG_UP   &trans              &trans &trans  &trans  &trans  &trans  &trans
-   &trans       &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &trans              &trans &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-   &bootloader  &trans  &trans      &trans      &trans      &trans              &trans &trans  &trans  &trans  &trans  &bt BT_SEL 3
+    &none  &trans  &kp PG_DN   &kp UP      &kp PG_UP   &trans              &trans       &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
+    &none  &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &trans              &trans       &trans  &trans  &trans  &trans  &none
+    &none  &trans  &trans      &trans      &trans      &trans              &bt BT_SEL 3 &trans  &trans  &trans  &tran   &none
 
                                         &trans &sk LSHIFT &kp SPACE      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
                   
@@ -132,22 +132,11 @@
                 CLAWLER {
 
                         bindings = <
-   &trans   &trans &kp BSPC     &kp UP      &kp R               &trans      &trans   &trans     &trans    &trans   &trans     &trans 
-   &trans   &trans &kp LEFT     &kp DOWN    &kp RIGHT           &trans      &trans   &trans     &trans    &trans   &trans     &trans 
-   &trans   &trans &trans       &trans      &trans              &trans      &trans   &trans     &trans    &trans   &trans     &trans 
+   &none    &trans &kp BSPC     &kp UP      &kp R               &trans      &trans   &trans     &trans    &trans   &trans     &none 
+   &none    &trans &kp LEFT     &kp DOWN    &kp RIGHT           &trans      &trans   &trans     &trans    &trans   &trans     &none 
+   &none    &trans &trans       &trans      &trans              &trans      &trans   &trans     &trans    &trans   &trans     &none 
 
                    &trans &kp RET &kp SPACE                          &trans &trans &trans
-                  
-                        >;
-                };
-                QWERTY {
-
-                        bindings = <
-   &kp N1      &kp Q &kp W &kp E  &kp R &kp T         &kp Y &kp U  &kp I     &kp O               &kp P     &kp LC(S)
-   &kp LSHIFT  &kp A &kp S &kp D  &kp F &kp G       &kp H &kp J  &kp K     &lt NAVLAYER L      &kp SEMI        &kp SQT
-   &kp LCTRL   &kp Z &kp X &kp C  &kp V &kp B       &kp N &kp M  &kp COMMA &kp DOT             &kp FSLH     &kp ESC
-
-                  &kp LCTRL &mkp RCLK &lt NUMLAYER SPACE   &sk RSHIFT &kp RCTRL &kp RALT
                   
                         >;
                 };
