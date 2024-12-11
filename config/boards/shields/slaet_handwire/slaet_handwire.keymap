@@ -11,9 +11,8 @@
 #define NUMLAYER     1
 #define NAVLAYER     2
 #define CLAWLER      3
-#define QWERTY       4
 
-/*                  36 KEY MATRIX 
+/*              36 KEY MATRIX 
 
   ╭─────────────────────┬────────────────────╮
   │  0   1   2   3   4  │  6   7   8   9  10 │ 
@@ -22,17 +21,6 @@
   ╰───────╮ 31  32  33  │ 34  35  36 ╭───────╯
           ╰─────────────┴────────────╯          */
 
-/ {
-     behaviors {
-        nbspc: n_bspc {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp N>, <&kp BSPC>;
-            mods = <(MOD_LCTL|MOD_RALT)>;
-        };
-    };
-
-};
 
 / {
         keymap {
@@ -40,11 +28,11 @@
                 default_layer {
 
                         bindings = <
-    &kp Q &kp W &kp F &kp P &kp B                         &kp J &kp L     &kp U     &kp Y               &kp SEMI
-    &kp A &kp R &kp S &kp T &kp G                         &kp M &kp N     &kp E     &lt NAVLAYER I      &kp O
-    &kp Z &kp X &kp C &kp D &kp V                         &kp K &kp H     &kp COMMA &kp DOT             &kp FSLH
+        &kp Q &kp W &kp F &kp P &kp B                   &kp J &kp L     &kp U     &kp Y               &kp SEMI
+        &kp A &kp R &kp S &kp T &kp G                   &kp M &kp N     &kp E     &lt NAVLAYER I      &kp O
+        &kp Z &kp X &kp C &kp D &kp V                   &kp K &kp H     &kp COMMA &kp DOT             &kp FSLH
 
-               /**/  &kp LCTRL &kp LCTRL &lt NUMLAYER SPACE       /**/ &sk RSHIFT &kp RCTRL &kp RALT
+        &kp LCTRL &kp LCTRL &lt NUMLAYER SPACE          &sk RSHIFT &kp RCTRL &kp RALT
                   
                         >;
                 };
@@ -78,17 +66,6 @@
     &trans &trans       &trans      &trans              &trans      &trans   &trans     &trans    &trans   &trans
 
                    &trans &kp RET &kp SPACE                          &trans &trans &trans
-                  
-                        >;
-                };
-                QWERTY {
-
-                        bindings = <
-    &kp Q &kp W &kp E  &kp R &kp T         &kp Y &kp U  &kp I     &kp O               &kp P
-    &kp A &kp S &kp D  &kp F &kp G       &kp H &kp J  &kp K     &lt NAVLAYER L      &kp SEMI
-    &kp Z &kp X &kp C  &kp V &kp B       &kp N &kp M  &kp COMMA &kp DOT             &kp FSLH
-
-                  &kp LCTRL &mkp RCLK &lt NUMLAYER SPACE   &sk RSHIFT &kp RCTRL &kp RALT
                   
                         >;
                 };
