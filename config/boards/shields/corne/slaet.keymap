@@ -73,7 +73,7 @@
         combo_rclkhold {
             timeout-ms = <50>;
             key-positions = <1 2 3>;
-            bindings = <&mkt RCLK>;
+            bindings = <&mkp RCLK>;
         };                              
     };
 };
