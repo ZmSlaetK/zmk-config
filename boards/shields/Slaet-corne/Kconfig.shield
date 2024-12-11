@@ -1,0 +1,5 @@
+config SHIELD_OKSLAET_LEFT
+    def_bool $(shields_list_contains,okslaet_left)
+
+config SHIELD_OKSLAET_RIGHT
+    def_bool $(shields_list_contains,okslaet_right)
