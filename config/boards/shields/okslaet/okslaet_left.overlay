@@ -1,4 +1,3 @@
-
 #include "okslaet.dtsi"
 
 &kscan0 {
