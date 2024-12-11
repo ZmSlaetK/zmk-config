@@ -1,7 +1,7 @@
 if SHIELD_SLAET_HANDWIRE_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Slaet-Handwire"
+    default "SlaetHandwire"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y

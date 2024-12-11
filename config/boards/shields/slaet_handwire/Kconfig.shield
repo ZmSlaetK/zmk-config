@@ -1,6 +1,3 @@
-# Copyright (c) 2025 Slaet
-# SPDX-License-Identifier: MIT
-
 config SHIELD_SLAET_HANDWIRE_LEFT
     def_bool $(shields_list_contains,slaet_handwire_left)
 

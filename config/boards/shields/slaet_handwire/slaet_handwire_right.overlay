@@ -2,7 +2,7 @@
 #include "slaet_handwire.dtsi"
 
 &default_transform {
-    col-offset = <5>;
+    col-offset = <4>;
 };
 &kscan0 {
     col-gpios
