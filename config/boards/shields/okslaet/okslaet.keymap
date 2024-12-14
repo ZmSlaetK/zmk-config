@@ -99,10 +99,9 @@
                 default_layer {
 
                         bindings = <
-   &none  &kp Q &kp W &kp F &kp P &kp B                         &kp J &kp L     &kp U     &kp Y               &kp SEMI     &none
-   &none   &kp A &kp R &kp S &kp T &kp G                         &kp M &kp N     &kp E     &lt NAVLAYER I      &kp O        &none
-   &none    &kp Z &kp X &kp C &kp D &kp V                         &kp K &kp H     &kp COMMA &kp DOT             &kp FSLH     &none
-
+    &kp Q &kp W &kp F &kp P &kp B               &kp J &kp L &kp U &kp Y &kp SEMI
+    &kp A &kp R &kp S &kp T &kp G               &kp M &kp N &kp E &lt NAVLAYER I &kp O
+    &kp Z &kp X &kp C &kp D &kp V               &kp K &kp H &kp COMMA &kp DOT   &kp FSLH     
                /**/  &kp LCTRL &kp LCTRL &lt NUMLAYER SPACE       /**/ &sk RSHIFT &kp RCTRL &kp RALT
                   
                         >;
@@ -110,10 +109,7 @@
                 NUMLAYER {
 
                         bindings = <
-   &none   &kp EXCL &kp BSLH   &kp LBRC &kp RBRC &kp PIPE2                 &kp FSLH    &kp N7  &kp N8     &kp N9   &kp ASTRK          &none
-   &none   &kp HASH &kp DLLR   &kp LPAR &kp RPAR &kp DOT                   &kp BSLH    &kp N4  &kp N5     &kp N6   &kp PLUS           &none
-   &none   &kp FSLH &kp CARET  &kp LBKT &kp RBKT &kp TILDE2                &trans      &kp N1  &kp N2     &kp N3   &kp KP_DIVIDE      &none
-
+      &kp EXCL &kp BSLH   &kp LBRC &kp RBRC &kp PIPE2                 &kp FSLH    &kp N7  &kp N8     &kp N9   &kp ASTRK                &kp HASH &kp DLLR   &kp LPAR &kp RPAR &kp DOT                   &kp BSLH    &kp N4  &kp N5     &kp N6   &kp PLUS                 &kp FSLH &kp CARET  &kp LBKT &kp RBKT &kp TILDE2                &trans      &kp N1  &kp N2     &kp N3   &kp KP_DIVIDE      
                                         &trans &sk LSHIFT &trans           &mt LSHIFT NUMBER_0    &kp RSHIFT  &kp RALT
                   
                         >;
@@ -121,10 +117,7 @@
                 NAVLAYER {
 
                         bindings = <
-    &none  &trans  &kp PG_DN   &kp UP      &kp PG_UP   &trans              &trans       &trans  &trans  &trans  &trans  &bt BT_CLR_ALL
-    &none  &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &trans              &trans       &trans  &trans  &trans  &trans  &none
-    &none  &trans  &trans      &trans      &trans      &trans              &bt BT_SEL 3 &trans  &trans  &trans  &trans   &none
-
+     &trans  &kp PG_DN   &kp UP      &kp PG_UP   &trans              &trans       &trans  &trans  &trans  &bt BT_CLR_ALL       &trans  &kp LEFT    &kp DOWN    &kp RIGHT   &trans              &trans       &trans  &trans  &trans  &trans               &trans  &trans      &trans      &trans      &trans              &bt BT_SEL 3 &trans  &trans  &trans  &trans          
                                         &trans &sk LSHIFT &kp SPACE      &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2
                   
                         >;
@@ -132,9 +125,9 @@
                 CLAWLER {
 
                         bindings = <
-   &none    &trans &kp BSPC     &kp UP      &kp R               &trans      &trans   &trans     &trans    &trans   &trans     &none 
-   &none    &trans &kp LEFT     &kp DOWN    &kp RIGHT           &trans      &trans   &trans     &trans    &trans   &trans     &none 
-   &none    &trans &trans       &trans      &trans              &trans      &trans   &trans     &trans    &trans   &trans     &none 
+      &trans &kp BSPC     &kp UP      &kp R               &trans      &trans   &trans     &trans    &trans   &trans     
+      &trans &kp LEFT     &kp DOWN    &kp RIGHT           &trans      &trans   &trans     &trans    &trans   &trans     
+      &trans &trans       &trans      &trans              &trans      &trans   &trans     &trans    &trans   &trans     
 
                    &trans &kp RET &kp SPACE                          &trans &trans &trans
                   
