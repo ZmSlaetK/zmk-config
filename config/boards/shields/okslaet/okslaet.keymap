@@ -175,7 +175,7 @@
                 };
                 BOOT {
 
-                        bindings = <Than
+                        bindings = <
             &none  &bootloader  &bootloader &bootloader &bootloader &bootloader             &bootloader  &bootloader &bootloader &bootloader &bootloader &none
             &none  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP          &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &none
             &none  &soft_off  &soft_off &soft_off &soft_off &soft_off                        &trans  &trans  &trans &soft_off &soft_off 
