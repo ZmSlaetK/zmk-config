@@ -13,6 +13,7 @@
 #define NAVLAYER     2
 #define MOUSE        3
 #define CLAWLER      4
+#define BOOT         5
 
 /*          42 KEY MATRIX / LAYOUT MAPPING
   ╭────────────────────────┬────────────────────────╮ 
@@ -79,6 +80,11 @@
             key-positions = <1 2 3>;
             bindings = <&tog CLAWLER>;
         };
+        combo_boot {
+            timeout-ms = <50>;
+            key-positions = <30 31 32>;
+            bindings = <&tog BOOT>;
+        };
         combo_lgui {
             timeout-ms = <50>;
             key-positions = <26 27>;
@@ -135,10 +141,10 @@
                 MOUSE {
 
                         bindings = <
-            &none  &bootloader  &msc SCRL_DOWN      &mmv MOVE_UP    &msc SCRL_UP        &trans              &bootload   &trans  &trans  &trans  &trans &none
-            &none  &kp K_SLEEP  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &trans              &trans      &trans  &trans  &trans  &trans &none
-            &none  &soft_off    &trans              &trans          &trans              &trans              &trans      &trans  &trans  &trans  &trans &none
-                                                                            &trans &trans &trans        &mkp LCLK &mkp RCLK &trans                  
+            &none  &trans  &msc SCRL_DOWN      &mmv MOVE_UP    &msc SCRL_UP        &trans              &trans   &trans  &trans  &trans  &trans &none
+            &none  &trans  &mmv MOVE_LEFT      &mmv MOVE_DOWN  &mmv MOVE_RIGHT     &trans              &trans      &trans  &trans  &trans  &trans &none
+            &none  &trans    &trans              &trans          &trans              &trans              &trans      &trans  &trans  &trans  &trans &none
+                                        &trans &trans &trans                                    &mkp LCLK &mkp RCLK &trans                  
                         >;
                 };
 
@@ -147,14 +153,24 @@
                 CLAWLER {
 
                         bindings = <
-   &none    &trans &kp BSPC     &kp UP      &kp R               &trans      &trans   &trans     &trans    &trans   &trans     &none 
-   &none    &trans &kp LEFT     &kp DOWN    &kp RIGHT           &trans      &trans   &trans     &trans    &trans   &trans     &none 
-   &none    &trans &trans       &trans      &trans              &trans      &trans   &trans     &trans    &trans   &trans     &none  
+   &none    &trans &kp BSPC     &kp UP      &kp R       &trans              &trans   &trans     &trans    &trans   &trans     &none 
+   &none    &trans &kp LEFT     &kp DOWN    &kp RIGHT   &trans              &trans   &trans     &trans    &trans   &trans     &none 
+   &none    &trans &trans       &trans      &trans      &trans              &trans   &trans     &trans    &trans   &trans     &none  
 
-                   &trans &kp RET &kp SPACE                          &trans &trans &trans
+                          &trans &kp RET &kp SPACE                                     &trans &trans &trans
                   
                         >;
                 };
+                BOOT {
+
+                        bindings = <
+            &none  &bootloader  &bootloader &bootloader &bootloader &bootloader             &bootloader  &bootloader &bootloader &bootloader &bootloader &none
+            &none  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP          &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &kp K_SLEEP  &none
+            &none  &soft_off  &soft_off &soft_off &soft_off &soft_off                        &trans  &trans  &trans &soft_off &soft_off 
+                                                                &trans &trans &trans         &trans &trans &trans                  
+                        >;
+                };
+
         };
 };
 
