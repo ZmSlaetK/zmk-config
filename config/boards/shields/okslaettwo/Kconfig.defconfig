@@ -1,0 +1,6 @@
+if SHIELD_OKSLAETTWO
+
+config ZMK_KEYBOARD_NAME
+    default "okslaettwo"
+
+endif
