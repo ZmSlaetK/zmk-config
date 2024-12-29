@@ -1,11 +1,8 @@
 file_format: "1"
 id: slaet
-name: OkSlaet
+name: OkSlaetTwo
 type: shield
 url: 
 requires: [pro_micro]
 features:
   - keys
-siblings:
-  - okslaet_left
-  - okslaet_right
