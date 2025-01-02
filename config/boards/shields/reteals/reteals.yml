@@ -1,11 +1,11 @@
 file_format: "1"
-id: slaet
-name: OkSlaet
+id: reteals
+name: Reteals
 type: shield
 url: 
 requires: [pro_micro]
 features:
   - keys
 siblings:
-  - okslaet_left
-  - okslaet_right
+  - reteals_left
+  - reteals_right
